@@ -1,0 +1,34 @@
+# Mr.Helper - Robots.txt
+# https://mr-helper-services.onrender.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://mr-helper-services.onrender.com/sitemap.xml
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Crawl-delay for bots (optional, be polite)
+User-agent: *
+Crawl-delay: 1

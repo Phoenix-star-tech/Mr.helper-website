@@ -1,0 +1,46 @@
+# Mr.Helper
+
+> Mr.Helper is India's trusted home services marketplace app that connects users with KYC-verified local service providers for plumbing, electrical work, AC repair, cleaning, painting, carpentry, and other home maintenance services.
+
+## About
+Mr.Helper was created to bridge the gap between skilled local service providers and households in need. The platform focuses on Trust, Location-based matching, and Verification. Every provider undergoes strict KYC verification ensuring safety and quality.
+
+## Founded
+- Founded: 2024
+- Headquarters: Warangal, Telangana, India
+- Founders: Karthik (CEO), Vamshi Krishna (CFO), Sai Harshith Goud (CMO)
+
+## Services Offered
+- Plumbing: Leak repairs, pipe fitting, tap installation, bathroom maintenance
+- Electrical: Wiring, switch installation, appliance repair, electrical maintenance
+- AC Repair: AC servicing, installation, gas filling, cooling issue resolution
+- Cleaning: Home cleaning, office cleaning, deep cleaning, sanitation
+- Painting: Interior painting, exterior painting, wall textures, waterproofing
+- Carpentry: Furniture assembly, repairs, modular kitchen, woodwork
+- Home Maintenance: General household repairs and maintenance
+
+## Key Features
+- 100% KYC-verified service providers
+- Location-based matching for quick service
+- Real-time booking and tracking
+- Smart push notifications
+- Transparent pricing with no hidden charges
+- Rating and review system
+- Secure admin approval system
+
+## Service Areas
+- Warangal, Telangana
+- Kazipet, Telangana
+- Hanamkonda, Telangana
+- Expanding to Hyderabad, Bangalore, Chennai, and other Indian cities
+
+## Platform
+- Available on Android (Google Play Store)
+- Play Store: https://play.google.com/apps/internaltest/4701754631700243122
+- iOS version coming soon
+- Website: https://mr-helper-services.onrender.com
+
+## Contact
+- Website: https://mr-helper-services.onrender.com
+- Email: support@mrhelper.in
+- Instagram: @mrhelper.in
