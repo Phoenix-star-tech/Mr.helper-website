@@ -77,6 +77,15 @@
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
         }
+        
+        /* Hide scrollbar for sliders */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 
     <!-- JSON-LD Structured Data: Organization -->
@@ -631,11 +640,11 @@
                     behind Mr.Helper.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div id="team-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 px-4 -mx-4 md:flex-wrap md:justify-center md:overflow-x-visible md:snap-none md:pb-0 md:px-0 md:mx-0 hide-scrollbar scroll-smooth">
                 <!-- Helper functions to create initials avatar -->
                 <!-- Founder 1 -->
                 <div
-                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-full border-t-4 border-brand-500">
+                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-[85vw] max-w-[320px] md:max-w-none md:w-[calc(50%-1rem)] lg:w-[280px] xl:w-[300px] border-t-4 border-brand-500 flex-shrink-0 snap-center md:snap-align-none">
                     <div
                         class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-white shadow-md">
                         <img src="founder_karthik.jpg" alt="Karthik" class="w-full h-full object-cover">
@@ -648,7 +657,7 @@
 
                 <!-- Founder 2 -->
                 <div
-                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-full border-t-4 border-brand-500">
+                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-[85vw] max-w-[320px] md:max-w-none md:w-[calc(50%-1rem)] lg:w-[280px] xl:w-[300px] border-t-4 border-brand-500 flex-shrink-0 snap-center md:snap-align-none">
                     <div
                         class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-white shadow-md">
                         <img src="founder_vamshi.jpg" alt="Vamshi Krishna" class="w-full h-full object-cover">
@@ -661,7 +670,7 @@
 
                 <!-- Founder 3 -->
                 <div
-                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-full border-t-4 border-brand-500">
+                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-[85vw] max-w-[320px] md:max-w-none md:w-[calc(50%-1rem)] lg:w-[280px] xl:w-[300px] border-t-4 border-brand-500 flex-shrink-0 snap-center md:snap-align-none">
                     <div
                         class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-white shadow-md">
                         <img src="founder_saiharshith.png" alt="Sai Harshith Goud" class="w-full h-full object-cover">
@@ -672,9 +681,21 @@
                         growth."</p>
                 </div>
 
+                <!-- Founder 4 -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-[85vw] max-w-[320px] md:max-w-none md:w-[calc(50%-1rem)] lg:w-[280px] xl:w-[300px] border-t-4 border-brand-500 flex-shrink-0 snap-center md:snap-align-none">
+                    <div
+                        class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-white shadow-md">
+                        <img src="founder_shail.jpg" alt="Sahil Chavan" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Sahil Chavan</h3>
+                    <p class="text-brand-600 font-medium text-sm uppercase tracking-wider mb-4">Co-Founder & COO</p>
+                    <p class="text-slate-600 text-sm italic">"Ensuring operational excellence and building a robust network of trusted professionals."</p>
+                </div>
+
                 <!-- Team Member 4 -->
                 <div
-                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-full border-t-4 border-brand-500">
+                    class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center w-[85vw] max-w-[320px] md:max-w-none md:w-[calc(50%-1rem)] lg:w-[280px] xl:w-[300px] border-t-4 border-brand-500 flex-shrink-0 snap-center md:snap-align-none">
                     <div
                         class="w-24 h-24 mx-auto bg-slate-200 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-white shadow-md">
                         <img src="founder_akhil_updated.jpg" alt="Akhil" class="w-full h-full object-cover">
@@ -901,6 +922,51 @@
                 }
             });
         });
+
+        // Auto-scroll Team Slider on Mobile (Every 3 seconds)
+        const teamSlider = document.getElementById('team-slider');
+        if (teamSlider) {
+            let autoScrollTimer;
+            
+            const startSlider = () => {
+                // Only run on mobile (Tailwind 'md' breakpoint is 768px)
+                if (window.innerWidth >= 768) return;
+                
+                autoScrollTimer = setInterval(() => {
+                    const firstCard = teamSlider.querySelector('div');
+                    if (!firstCard) return;
+                    
+                    const cardWidth = firstCard.clientWidth + 24; // Card width + 24px gap
+                    
+                    // If scrolled to the end, reset to the beginning
+                    if (teamSlider.scrollLeft + teamSlider.clientWidth >= teamSlider.scrollWidth - 10) {
+                        teamSlider.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        // Scroll right by one card
+                        teamSlider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+                    }
+                }, 3000);
+            };
+
+            const stopSlider = () => clearInterval(autoScrollTimer);
+
+            // Start initially
+            startSlider();
+
+            // Pause scrolling when the user touches/swipes it manually
+            teamSlider.addEventListener('touchstart', stopSlider, {passive: true});
+            teamSlider.addEventListener('touchend', () => {
+                stopSlider();
+                // Resume auto-scroll 3 seconds after they finish swiping
+                setTimeout(startSlider, 3000);
+            }, {passive: true});
+            
+            // Handle rotating the phone or resizing
+            window.addEventListener('resize', () => {
+                stopSlider();
+                startSlider();
+            });
+        }
     </script>
 
     <style>
