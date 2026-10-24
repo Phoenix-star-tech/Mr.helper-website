@@ -1,29 +1,4 @@
-# Mr.Helper - robots.txt
-# https://mr-helper-services.onrender.com/robots.txt
-
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
 
-# AI crawlers
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-Sitemap: https://mr-helper-services.onrender.com/sitemap.xml
+Sitemap: https://mrhelper.in/sitemap.xml

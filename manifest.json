@@ -1,0 +1,26 @@
+{
+  "name": "Mr.Helper - Home Services App",
+  "short_name": "Mr.Helper",
+  "description": "Book home services in Warangal & Hyderabad: verified plumbers, electricians, AC repair & cleaning.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1F44",
+  "theme_color": "#0B1F44",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

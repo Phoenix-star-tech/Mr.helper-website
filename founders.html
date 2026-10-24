@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Founders | Mr. Helper - Vashik Technologies</title>
+
+  <meta name="description"
+    content="Meet the 5 founders of Mr. Helper, operated by Vashik Technologies. Transforming doorstep home services and empowering local tradesmen across Hyderabad, Warangal & Hanamkonda.">
+  <meta name="keywords"
+    content="Mr Helper founders, Vashik Technologies leadership, home service startup Telangana, Hyderabad home services founders, Warangal startup">
+  <link rel="canonical" href="https://mrhelper.in/founders.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Leadership & Founders | Mr. Helper App">
+  <meta property="og:description"
+    content="The vision, mission, and leadership team behind Mr. Helper. Organizing local home services across Telangana.">
+  <meta property="og:image" content="assets/images/founder-1.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JSON-LD Structured Data for Executive Leadership (SEO & AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Founders & Leadership | Mr. Helper",
+    "description": "Leadership team of Mr. Helper by Vashik Technologies: Karthik (Founder & CEO), Vamshi Krishna (Co-Founder & CFO), Sai Harshith Goud (Co-Founder & COO), Akhil (UI & UX Designer), and T. Naga Shiva Harshitha (Technology & Innovation).",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Mr. Helper",
+      "legalName": "Vashik Technologies",
+      "url": "https://mrhelper.in/",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Karthik Kumar",
+          "jobTitle": "Founder & CEO",
+          "image": "https://mrhelper.in/assets/images/founder-1.jpg",
+          "sameAs": "https://www.linkedin.com/in/karthik-kumar-b820ab2a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        },
+        {
+          "@type": "Person",
+          "name": "Vamshi Krishna",
+          "jobTitle": "Co-Founder & CFO",
+          "image": "https://mrhelper.in/assets/images/founder-2.jpg",
+          "sameAs": "https://www.linkedin.com/in/vamshi-krishna-7484612b8?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        },
+        {
+          "@type": "Person",
+          "name": "Sai Harshith Chirra",
+          "jobTitle": "Co-Founder & COO",
+          "image": "https://mrhelper.in/assets/images/founder-3.jpg",
+          "sameAs": "https://www.linkedin.com/in/sai-harshith-chirra-4960a92a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        },
+        {
+          "@type": "Person",
+          "name": "Akhil Boda",
+          "jobTitle": "UI & UX Designer",
+          "image": "https://mrhelper.in/assets/images/founder-4.jpg",
+          "sameAs": "https://www.linkedin.com/in/akhil-boda?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        },
+        {
+          "@type": "Person",
+          "name": "T. Naga Shiva Harshitha",
+          "jobTitle": "Technology & Innovation",
+          "image": "https://mrhelper.in/assets/images/founder-5.jpg",
+          "sameAs": "https://www.linkedin.com/in/thivari-naga-shiva-harshitha-1bab612a2?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    .founder-page-hero {
+      background: radial-gradient(circle at 80% 20%, rgba(255, 87, 34, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.25) 0%, transparent 45%),
+        linear-gradient(180deg, #0a1124 0%, #0e1933 100%);
+      color: var(--text-white);
+      padding: 75px 0 55px;
+      text-align: center;
+      position: relative;
+    }
+
+    .founders-detailed-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .founders-detailed-grid .founder-card-large:nth-child(4),
+    .founders-detailed-grid .founder-card-large:nth-child(5) {
+      grid-column: span 1;
+    }
+
+    .founder-card-large {
+      background: var(--bg-surface);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-normal);
+    }
+
+    .founder-card-large:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(255, 87, 34, 0.4);
+    }
+
+    .founder-photo-large {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #0f172a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .founder-photo-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform var(--transition-normal);
+    }
+
+    .founder-card-large:hover .founder-photo-large img {
+      transform: scale(1.05);
+    }
+
+    .founder-body-large {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .story-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 45px;
+      margin-bottom: 50px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .story-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-heading);
+      margin-bottom: 18px;
+    }
+
+    .story-text {
+      font-size: 1.05rem;
+      color: var(--text-body);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .value-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+    }
+
+    .value-icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+
+    .value-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-heading);
+      margin-bottom: 8px;
+    }
+
+    .value-desc {
+      font-size: 0.92rem;
+      color: var(--text-body);
+    }
+
+    @media (max-width: 1024px) {
+      .founders-detailed-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .founders-detailed-grid,
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-block {
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo-wrap" title="Mr. Helper Home Service App">
+          <img src="assets/images/mr-helper-logo-clean.png" alt="Mr. Helper Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-title">Mr. Helper</span>
+            <span class="brand-tagline">Leadership</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">10+ Services</a></li>
+          <li><a href="index.html#cities" class="nav-link">Locations</a></li>
+          <li><a href="founders.html" class="nav-link active">Founders</a></li>
+          <li><a href="index.html#faqs" class="nav-link">FAQs</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share"
+            target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>Get App</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 3l14 9-14 9V3z" />
+            </svg>
+          </a>
+          <button type="button" class="mobile-toggle" aria-label="Toggle Navigation">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="founder-page-hero">
+    <div class="container">
+      <span class="section-tag"
+        style="background: rgba(255,255,255,0.1); color: #bae6fd; border: 1px solid rgba(255,255,255,0.2);">Executive
+        Leadership</span>
+      <h1 class="hero-title" style="font-size: 3rem; margin: 16px 0;">Meet the Visionary Founders of Mr. Helper</h1>
+      <p class="hero-subtitle" style="max-width: 780px; margin: 0 auto;">
+        Founded under <strong>Vashik Technologies</strong>, Mr. Helper is reimagining urban living
+        and grassroots skilled trades in India with technology, fairness, and speed within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- Story & Vision -->
+  <section class="section">
+    <div class="container">
+      <div class="story-block">
+        <h2 class="story-title">Why We Built Mr. Helper</h2>
+        <p class="story-text">
+          In urban and developing hubs like <strong>Hyderabad</strong>, <strong>Warangal</strong>, and
+          <strong>Hanamkonda</strong>, finding an honest, skilled plumber or electrician in an emergency used to be a
+          frustrating guessing game. Homeowners had to ask neighbours, haggle over arbitrary prices, and wait hours for
+          someone who might not even show up.
+        </p>
+        <p class="story-text">
+          At the same time, thousands of talented local tradesmen—electricians, plumbers, AC technicians, carpenters,
+          painters, and salon professionals—struggled to find steady, dignified work near their homes. They relied on
+          local tea stalls or contractor middlemen who took heavy commissions.
+        </p>
+        <p class="story-text">
+          <strong>Mr. Helper was created by our founding team to bridge this exact divide.</strong> By pairing a
+          seamless Android application with strict background verification, standardized transparent rate cards, and a
+          reliable dispatch engine within 24 hours, we empower both the homeowner and the technician.
+        </p>
+
+        <!-- Core Values -->
+        <div class="values-grid">
+          <div class="value-box">
+            <div class="value-icon">🤝</div>
+            <h3 class="value-title">Dignity of Labour</h3>
+            <p class="value-desc">We treat every technician as a valued professional partner with fair, timely payouts,
+              accidental cover, and skill enhancement.</p>
+          </div>
+          <div class="value-box">
+            <div class="value-icon">💎</div>
+            <h3 class="value-title">Transparent Pricing</h3>
+            <p class="value-desc">Zero hidden charges. Standard rate cards are visible upfront in the app, eliminating
+              awkward bargaining for households.</p>
+          </div>
+          <div class="value-box">
+            <div class="value-icon">⚡</div>
+            <h3 class="value-title">Rapid Reliability</h3>
+            <p class="value-desc">Our hyper-local geolocation dispatch sends verified technicians to your door within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founders Profile Grid (ALL 5 FOUNDERS) -->
+      <div class="section-header">
+        <span class="section-tag">Leadership Team</span>
+        <h2 class="section-title">The Founding Team</h2>
+        <p class="section-desc">Driving technology, field operations, customer trust, and market expansion.</p>
+      </div>
+
+      <div class="founders-detailed-grid">
+        <!-- Founder 1: Karthik Kumar -->
+        <div class="founder-card-large">
+          <div class="founder-photo-large">
+            <img src="assets/images/founder-1.jpg" alt="Karthik Kumar - Founder & CEO Mr. Helper">
+          </div>
+          <div class="founder-body-large">
+            <span class="founder-role-badge">Founder & CEO</span>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+              <h3 class="founder-name" style="margin: 0;">Karthik Kumar</h3>
+              <a href="https://www.linkedin.com/in/karthik-kumar-b820ab2a6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 9999px; background: rgba(10, 102, 194, 0.1); color: #0a66c2; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1px solid rgba(10, 102, 194, 0.25);" title="Connect with Karthik Kumar on LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div class="founder-title-company">Vashik Technologies</div>
+            <p class="founder-bio">
+              "Every household deserves peace of mind when it comes to electrical safety, plumbing maintenance, and home
+              hygiene. Our mission with Mr. Helper is to make booking a verified technician as effortless as ordering
+              food online, while uplifting our local technician community across Telangana with dignified livelihoods."
+            </p>
+            <div style="margin-top: 10px; font-size: 0.86rem; color: #64748b;">
+              <strong>Focus:</strong> Company Strategy, Expansion in Hyderabad, Warangal & Hanamkonda, Institutional
+              Alliances.
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder 2: Vamshi Krishna -->
+        <div class="founder-card-large">
+          <div class="founder-photo-large">
+            <img src="assets/images/founder-2.jpg" alt="Vamshi Krishna - Co-Founder & CFO Mr. Helper">
+          </div>
+          <div class="founder-body-large">
+            <span class="founder-role-badge">Co-Founder & CFO</span>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+              <h3 class="founder-name" style="margin: 0;">Vamshi Krishna</h3>
+              <a href="https://www.linkedin.com/in/vamshi-krishna-7484612b8?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 9999px; background: rgba(10, 102, 194, 0.1); color: #0a66c2; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1px solid rgba(10, 102, 194, 0.25);" title="Connect with Vamshi Krishna on LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div class="founder-title-company">Vashik Technologies</div>
+            <p class="founder-bio">
+              "Building an enduring, scalable hyper-local marketplace requires sound financial architecture, disciplined
+              capital allocation, and equitable economics. We ensure transparent pricing for families and fair,
+              profitable payouts for every service partner."
+            </p>
+            <div style="margin-top: 10px; font-size: 0.86rem; color: #64748b;">
+              <strong>Focus:</strong> Financial Planning & Analysis, Capital Allocation, Risk Management & Commercial
+              Governance.
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder 3: Sai Harshith Chirra -->
+        <div class="founder-card-large">
+          <div class="founder-photo-large">
+            <img src="assets/images/founder-3.jpg" alt="Sai Harshith Chirra - Co-Founder & COO Mr. Helper">
+          </div>
+          <div class="founder-body-large">
+            <span class="founder-role-badge">Co-Founder & COO</span>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+              <h3 class="founder-name" style="margin: 0;">Sai Harshith Chirra</h3>
+              <a href="https://www.linkedin.com/in/sai-harshith-chirra-4960a92a6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 9999px; background: rgba(10, 102, 194, 0.1); color: #0a66c2; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1px solid rgba(10, 102, 194, 0.25);" title="Connect with Sai Harshith Chirra on LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div class="founder-title-company">Vashik Technologies</div>
+            <p class="founder-bio">
+              "Operational discipline on the ground is the true bedrock of customer trust. We enforce strict background
+              verification, professional toolkit standards, and reliable dispatch SLAs within 24 hours so every home service
+              visit is seamless and safe."
+            </p>
+            <div style="margin-top: 10px; font-size: 0.86rem; color: #64748b;">
+              <strong>Focus:</strong> Ground Field Operations, Pro Onboarding, Within 24 Hours Dispatch SLA & Quality
+              Assurance.
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder 4: Akhil Boda -->
+        <div class="founder-card-large">
+          <div class="founder-photo-large">
+            <img src="assets/images/founder-4.jpg" alt="Akhil Boda - UI & UX Designer Mr. Helper">
+          </div>
+          <div class="founder-body-large">
+            <span class="founder-role-badge">UI & UX Designer</span>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+              <h3 class="founder-name" style="margin: 0;">Akhil Boda</h3>
+              <a href="https://www.linkedin.com/in/akhil-boda?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 9999px; background: rgba(10, 102, 194, 0.1); color: #0a66c2; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1px solid rgba(10, 102, 194, 0.25);" title="Connect with Akhil Boda on LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div class="founder-title-company">Vashik Technologies</div>
+            <p class="founder-bio">
+              "Great product design removes friction between an urgent home emergency and getting verified help. From
+              intuitive rate card transparency to live dispatch tracking and one-tap rebooking, every screen in the Mr.
+              Helper app is crafted with deep user empathy."
+            </p>
+            <div style="margin-top: 10px; font-size: 0.86rem; color: #64748b;">
+              <strong>Focus:</strong> Mobile App UI/UX, Design Systems, Frictionless User Journeys & Brand Visual
+              Identity.
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder 5: T. Naga Shiva Harshitha -->
+        <div class="founder-card-large">
+          <div class="founder-photo-large">
+            <img src="assets/images/founder-5.jpg" alt="T. Naga Shiva Harshitha - Technology & Innovation Mr. Helper">
+          </div>
+          <div class="founder-body-large">
+            <span class="founder-role-badge">Technology & Innovation</span>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+              <h3 class="founder-name" style="margin: 0;">T. Naga Shiva Harshitha</h3>
+              <a href="https://www.linkedin.com/in/thivari-naga-shiva-harshitha-1bab612a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 9999px; background: rgba(10, 102, 194, 0.1); color: #0a66c2; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1px solid rgba(10, 102, 194, 0.25);" title="Connect with T. Naga Shiva Harshitha on LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div class="founder-title-company">Vashik Technologies</div>
+            <p class="founder-bio">
+              "Technology and innovation power the hyper-local matchmaking engine of Mr. Helper. We build intelligent
+              geolocation dispatch algorithms, resilient cloud architecture, and data pipelines that connect users with
+              certified technicians in mere seconds."
+            </p>
+            <div style="margin-top: 10px; font-size: 0.86rem; color: #64748b;">
+              <strong>Focus:</strong> Platform Architecture, Real-Time Geolocation Matching, Scalable Cloud Systems &
+              Tech Innovation.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Download Banner -->
+      <div class="partner-banner"
+        style="background: linear-gradient(135deg, #1e40af 0%, #172554 100%); margin-top: 60px;">
+        <div>
+          <h3 class="partner-title">Experience Mr. Helper on Your Phone</h3>
+          <p class="partner-desc">Available for all Android devices. Book top-rated home experts in Hyderabad, Warangal,
+            and Hanamkonda with one tap.</p>
+          <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share"
+            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>Download on Google Play</span>
+            <span>➔</span>
+          </a>
+        </div>
+        <div class="partner-action-box" style="background: rgba(255,255,255,0.08);">
+          <img src="assets/images/playstore-qr.png" alt="QR Code"
+            style="width: 140px; height: 140px; margin: 0 auto 10px; border-radius: 8px;">
+          <div style="font-size: 0.85rem; color: #cbd5e1;">Scan to install directly</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none;">
+        <div>
+          © 2026 <strong>Mr. Helper</strong> by <strong>Vashik Technologies</strong>. All rights
+          reserved.
+        </div>
+        <div>
+          <a href="index.html" style="color: #60a5fa; margin-right: 14px;">Back to Home</a>
+          <a href="services.html" style="color: #60a5fa;">Browse Services</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/seo-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All 10 In-App Services & Standard Rate Cards | Mr. Helper App</title>
+  
+  <meta name="description" content="Explore all 10 home services on Mr. Helper App across Hyderabad, Warangal & Hanamkonda. Plumbing, Electrical, AC Repair, Cleaning, Carpentry, Beauty, Labour, Painting, Transportation & Tuition. Fixed rates, download on Google Play!">
+  <meta name="keywords" content="Mr Helper all services, plumbing Hyderabad, electrical Warangal, ac service Hanamkonda, beauty at home, labour shifting, tuition teacher, painters Telangana">
+  <link rel="canonical" href="https://mrhelper.in/services.html">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .catalog-hero {
+      background: radial-gradient(circle at 80% 20%, rgba(255, 87, 34, 0.15) 0%, transparent 40%),
+                  radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.25) 0%, transparent 45%),
+                  linear-gradient(180deg, #0a1124 0%, #0e1933 100%);
+      color: var(--text-white);
+      padding: 75px 0 45px;
+      text-align: center;
+    }
+    .catalog-filter-bar {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      margin-top: -30px;
+      position: relative;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-btn {
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+      background: #f8fafc;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-body);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--brand-orange-gradient);
+      color: var(--text-white);
+      border-color: #ff8a00;
+      box-shadow: 0 4px 14px var(--brand-orange-glow);
+    }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .catalog-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-normal);
+    }
+    .catalog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(255, 87, 34, 0.4);
+    }
+    .subservice-list {
+      list-style: none;
+      margin: 16px 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .subservice-item {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .subservice-check {
+      color: var(--brand-emerald);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+      .catalog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo-wrap" title="Mr. Helper Home Service App">
+          <img src="assets/images/mr-helper-logo-clean.png" alt="Mr. Helper Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-title">Mr. Helper</span>
+            <span class="brand-tagline">Local Service App</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">10+ Services</a></li>
+          <li><a href="index.html#cities" class="nav-link">Locations</a></li>
+          <li><a href="founders.html" class="nav-link">Founders</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Get App</a>
+          <button type="button" class="mobile-toggle">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Catalog Hero -->
+  <section class="catalog-hero">
+    <div class="container">
+      <span class="section-tag" style="background: rgba(255,255,255,0.1); color: #bae6fd;">Complete Service Directory</span>
+      <h1 class="hero-title" style="font-size: 3rem; margin: 16px 0;">All 10 Mr. Helper In-App Services</h1>
+      <p class="hero-subtitle" style="max-width: 760px; margin: 0 auto;">
+        Available across <strong>Hyderabad</strong>, <strong>Warangal</strong>, <strong>Hanamkonda</strong>, and Kazipet. Instant booking with transparent rate cards via Google Play Store.
+      </p>
+    </div>
+  </section>
+
+  <!-- Catalog Filter Bar -->
+  <div class="container">
+    <div class="catalog-filter-bar">
+      <div style="font-weight: 800; color: #0f172a; font-size: 0.95rem;">Filter Services:</div>
+      <div class="filter-buttons" id="categoryFilters">
+        <button class="filter-btn active" data-filter="all">All 10 Services</button>
+        <button class="filter-btn" data-filter="repair">Home Repair</button>
+        <button class="filter-btn" data-filter="lifestyle">Beauty & Tuition</button>
+        <button class="filter-btn" data-filter="moving">Labour & Moving</button>
+      </div>
+      <div>
+        <select id="catalogCitySelector" style="padding: 10px 16px; border-radius: 8px; border: 1px solid #cbd5e1; font-weight: 700; outline: none;">
+          <option value="hyderabad" selected>City: Hyderabad</option>
+          <option value="warangal">City: Warangal</option>
+          <option value="hanamkonda">City: Hanamkonda</option>
+          <option value="kazipet">City: Kazipet</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Catalog Grid -->
+    <div class="catalog-grid" id="catalogGrid">
+      <!-- Generated by JavaScript dynamically using MR_HELPER_DATA -->
+    </div>
+  </div>
+
+  <!-- Bottom CTA -->
+  <section class="section" style="margin-top: 40px;">
+    <div class="container">
+      <div class="partner-banner" style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);">
+        <div>
+          <h3 class="partner-title">Book Any Service with Mr. Helper</h3>
+          <p class="partner-desc">Install the official Android application on Google Play Store to track technician arrivals, get transparent pricing.</p>
+          <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            Install Mr. Helper on Google Play
+          </a>
+        </div>
+        <div class="partner-action-box" style="background: rgba(255,255,255,0.08);">
+          <img src="assets/images/playstore-qr.png" alt="Play Store QR" style="width: 140px; height: 140px; margin: 0 auto 10px; border-radius: 8px;">
+          <div style="font-size: 0.85rem; color: #cbd5e1;">Scan with your camera</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none;">
+        <div>
+          © 2026 <strong>Mr. Helper</strong> by <strong>Vashik Technologies</strong>. All rights reserved.
+        </div>
+        <div>
+          <a href="index.html" style="color: #60a5fa; margin-right: 14px;">Home</a>
+          <a href="founders.html" style="color: #60a5fa; margin-right: 14px;">Founders</a>
+          <a href="contact.html" style="color: #60a5fa;">Contact & Partner</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QR Modal -->
+  <div class="modal-overlay" id="qrModal">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn">✕</button>
+      <div style="text-align: center;">
+        <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px;">Scan to Download Mr. Helper</h3>
+        <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 16px;">Direct Google Play Store download for Android.</p>
+        <img src="assets/images/playstore-qr.png" alt="QR Code" style="width: 220px; height: 220px; margin: 0 auto 16px;">
+        <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">Open on Google Play</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book Modal -->
+  <div class="modal-overlay" id="bookModal">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn">✕</button>
+      <div>
+        <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px;">Book Service Doorstep Pro</h3>
+        <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 16px;">We dispatch the closest technician.</p>
+        <form id="quickBookingForm">
+          <div style="margin-bottom: 14px;">
+            <label style="display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 4px;">Service</label>
+            <input type="text" id="modalServiceInput" value="Plumbing" readonly style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f8fafc; font-weight: 700;">
+          </div>
+          <div style="margin-bottom: 14px;">
+            <label style="display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 4px;">City</label>
+            <select id="modalUserCity" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;">
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Warangal">Warangal</option>
+              <option value="Hanamkonda">Hanamkonda</option>
+              <option value="Kazipet">Kazipet</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 18px;">
+            <label style="display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 4px;">Mobile Number</label>
+            <input type="tel" id="modalUserPhone" placeholder="e.g. 9876543210" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;">
+          </div>
+          <button type="submit" class="btn btn-secondary" style="width: 100%;">Confirm Booking ➔</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/seo-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Catalog Grid Renderer with Filter & Search Support
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('catalogGrid');
+      const citySelector = document.getElementById('catalogCitySelector');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      
+      let currentFilter = 'all';
+      let currentCity = citySelector?.value || 'hyderabad';
+
+      // Read URL parameters if coming from search redirect
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramService = urlParams.get('service');
+      const paramCity = urlParams.get('city');
+
+      if (paramCity && citySelector) {
+        citySelector.value = paramCity;
+        currentCity = paramCity;
+      }
+
+      const getCategory = (slug) => {
+        if (['beauty-service', 'tuition'].includes(slug)) return 'lifestyle';
+        if (['labour', 'transportation'].includes(slug)) return 'moving';
+        return 'repair';
+      };
+      
+      const renderCatalog = () => {
+        if (!grid || typeof MR_HELPER_DATA === 'undefined') return;
+        grid.innerHTML = '';
+        
+        const filtered = MR_HELPER_DATA.services.filter(s => {
+          if (currentFilter === 'all') return true;
+          return getCategory(s.slug) === currentFilter;
+        });
+
+        filtered.forEach(s => {
+          const card = document.createElement('div');
+          card.className = 'catalog-card';
+          if (paramService && s.slug === paramService) {
+            card.style.borderColor = '#ff5722';
+            card.style.boxShadow = '0 0 0 3px rgba(255,87,34,0.3)';
+          }
+          
+          card.innerHTML = `
+            <div style="border-radius: 16px; overflow: hidden; margin-bottom: 18px; border: 1px solid #e2e8f0; height: 180px; background: #e2e8f0;">
+              <img src="${s.image}" alt="${s.name}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 1.35rem; font-weight: 800; color: #091224; margin-bottom: 6px;">${s.name}</h3>
+            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 12px;">${s.description}</p>
+            <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px;">
+              <span style="font-size: 0.85rem; color: #64748b; font-weight: 600;">Starts at</span>
+              <span style="font-size: 1.35rem; font-weight: 800; color: #ff5722;">${s.startingPrice}</span>
+            </div>
+            <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #94a3b8; letter-spacing: 0.05em;">Key Inclusions in ${currentCity.charAt(0).toUpperCase() + currentCity.slice(1)}:</div>
+            <ul class="subservice-list">
+              ${s.subservices.slice(0, 4).map(sub => `<li class="subservice-item"><span class="subservice-check">✓</span><span>${sub}</span></li>`).join('')}
+            </ul>
+            <div style="margin-top: auto; display: flex; gap: 10px;">
+              <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1;">Open on Google Play</a>
+              <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.85rem; padding: 10px 14px;">App Store ➔</a>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+
+        // Re-attach modal trigger events to newly rendered cards
+        initModals();
+      };
+
+      // Filter button event listeners
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter') || 'all';
+          renderCatalog();
+        });
+      });
+
+      renderCatalog();
+      citySelector?.addEventListener('change', (e) => {
+        currentCity = e.target.value;
+        renderCatalog();
+      });
+    });
+  </script>
+</body>
+</html>

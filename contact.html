@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Join as Partner | Mr. Helper App</title>
+  
+  <meta name="description" content="Contact Mr. Helper support or register as an electrician, plumber, AC mechanic, or cleaner partner. Vashik Technologies. Hyderabad, Warangal, Hanamkonda.">
+  <meta name="keywords" content="Mr Helper contact, partner registration Mr Helper, electrician jobs Hyderabad, plumber jobs Warangal, Vashik Technologies">
+  <link rel="canonical" href="https://mrhelper.in/contact.html">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .contact-hero {
+      background: linear-gradient(180deg, #090d16 0%, #0f172a 100%);
+      color: var(--white);
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+    .contact-split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .contact-card-box {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      box-shadow: var(--card-shadow);
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--slate-700);
+      margin-bottom: 6px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--slate-300);
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color var(--transition-fast);
+    }
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    @media (max-width: 850px) {
+      .contact-split-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo-wrap" title="Mr. Helper Home Service App">
+          <img src="assets/images/mr-helper-logo-clean.png" alt="Mr. Helper Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-title">Mr. Helper</span>
+            <span class="brand-tagline">Support & Partners</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">10+ Services</a></li>
+          <li><a href="founders.html" class="nav-link">Founders</a></li>
+          <li><a href="index.html#faqs" class="nav-link">FAQs</a></li>
+          <li><a href="contact.html" class="nav-link active">Join as Partner</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Get App</a>
+          <button type="button" class="mobile-toggle">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <span class="section-tag" style="background: rgba(255,255,255,0.1); color: #93c5fd;">Customer Support & Technician Careers</span>
+      <h1 class="hero-title" style="font-size: 2.8rem; margin: 16px 0;">Get in Touch with Mr. Helper</h1>
+      <p class="hero-subtitle" style="max-width: 720px; margin: 0 auto;">
+        Have a question about your booking, or wish to join our verified technician network in Hyderabad, Warangal, or Hanamkonda? We are here to help.
+      </p>
+    </div>
+  </section>
+
+  <!-- Split Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-split-grid">
+        <!-- Box 1: Join as Partner Form -->
+        <div class="contact-card-box">
+          <span class="badge badge-secondary" style="margin-bottom: 12px;">Earn Up to ₹45,000 / Month</span>
+          <h2 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Technician Partner Registration</h2>
+          <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 24px;">
+            Are you an electrician, plumber, AC technician, carpenter, or cleaning specialist? Register now to get steady daily leads in your city.
+          </p>
+
+          <form id="partnerRegistrationForm" onsubmit="event.preventDefault(); alert('Thank you for registering! Our partner team will call you within 24 hours to complete your verification.'); this.reset();">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Mobile Number</label>
+              <input type="tel" class="form-control" placeholder="10-digit mobile number" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Your Trade / Skill</label>
+              <select class="form-control" required>
+                <option value="" disabled selected>Select Your Trade</option>
+                <option value="plumber">Plumber (Taps, Pipes, Sanitary)</option>
+                <option value="electrician">Electrician (Wiring, Fans, MCB)</option>
+                <option value="ac-mechanic">AC Mechanic (Jet Service, Gas Refill)</option>
+                <option value="carpenter">Carpenter (Furniture, Locks)</option>
+                <option value="cleaner">Cleaning Specialist</option>
+                <option value="appliances">Appliance Repair (Washing Machine / RO)</option>
+                <option value="painter">Painter & Waterproofing</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Primary Operating City</label>
+              <select class="form-control" required>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="warangal">Warangal</option>
+                <option value="hanamkonda">Hanamkonda</option>
+                <option value="kazipet">Kazipet</option>
+                <option value="other">Other Telangana Region</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Years of Practical Experience</label>
+              <input type="number" class="form-control" placeholder="e.g. 3 years" min="1" max="40" required>
+            </div>
+
+            <button type="submit" class="btn btn-secondary" style="width: 100%;">Submit Partner Application ➔</button>
+          </form>
+        </div>
+
+        <!-- Box 2: Corporate & Customer Helpdesk -->
+        <div class="contact-card-box">
+          <span class="badge badge-primary" style="margin-bottom: 12px;">Headquarters & Support</span>
+          <h2 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Official Contact Details</h2>
+          <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 24px;">
+            Operated by Vashik Technologies. Rapid grievance support and prompt response.
+          </p>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 4px;">Registered Entity</h4>
+              <p style="font-size: 0.9rem; color: #64748b;">Vashik Technologies<br>Operating across Telangana: Hyderabad, Warangal, Hanamkonda & Secunderabad.</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 4px;">Official Support & Contact Email</h4>
+              <p style="font-size: 0.95rem; color: #1e40af; font-weight: 600;"><a href="mailto:vashiktechnology@gmail.com">vashiktechnology@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📱</div>
+            <div>
+              <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 4px;">Google Play Package</h4>
+              <p style="font-size: 0.9rem; color: #64748b;"><code>com.digital_engineering_enterprises_platform.mrhelper</code></p>
+            </div>
+          </div>
+
+          <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-lg); padding: 20px; text-align: center; margin-top: 30px;">
+            <div style="font-weight: 700; margin-bottom: 8px;">Download Mobile App</div>
+            <img src="assets/images/playstore-qr.png" alt="Play Store QR" style="width: 140px; height: 140px; margin: 0 auto 12px;">
+            <div>
+              <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Get on Google Play ➔</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none;">
+        <div>
+          © 2026 <strong>Mr. Helper</strong> by <strong>Vashik Technologies</strong>. All rights reserved.
+        </div>
+        <div>
+          <a href="index.html" style="color: #60a5fa; margin-right: 14px;">Home</a>
+          <a href="services.html" style="color: #60a5fa; margin-right: 14px;">Services</a>
+          <a href="founders.html" style="color: #60a5fa;">Founders</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QR Modal -->
+  <div class="modal-overlay" id="qrModal">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn">✕</button>
+      <div style="text-align: center;">
+        <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px;">Scan to Download Mr. Helper</h3>
+        <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 16px;">Direct Google Play Store download for Android.</p>
+        <img src="assets/images/playstore-qr.png" alt="QR Code" style="width: 220px; height: 220px; margin: 0 auto 16px;">
+        <a href="https://play.google.com/store/apps/details?id=com.digital_engineering_enterprises_platform.mrhelper&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">Open on Google Play</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/seo-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
