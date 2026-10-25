@@ -327,11 +327,141 @@
     }
   });
 
+  // Founders Mobile Slider with Dot Navigation & Auto-Scroll
+  function initFoundersSlider() {
+    const slider = document.getElementById('team-slider');
+    const dots = document.querySelectorAll('.founder-dot');
+    if (!slider || dots.length === 0) return;
+
+    let autoScrollTimer = null;
+    let currentIndex = 0;
+
+    function getCards() {
+      return slider.querySelectorAll('article');
+    }
+
+    function updateDots(activeIndex) {
+      dots.forEach(function (dot, i) {
+        if (i === activeIndex) {
+          dot.classList.remove('bg-slate-300');
+          dot.classList.add('bg-brand-600', 'shadow-sm', 'scale-125');
+        } else {
+          dot.classList.remove('bg-brand-600', 'shadow-sm', 'scale-125');
+          dot.classList.add('bg-slate-300');
+        }
+      });
+      currentIndex = activeIndex;
+    }
+
+    function scrollToCard(index) {
+      var cards = getCards();
+      if (index < 0 || index >= cards.length) return;
+      var card = cards[index];
+      var containerRect = slider.getBoundingClientRect();
+      var cardRect = card.getBoundingClientRect();
+      var scrollOffset = cardRect.left - containerRect.left + slider.scrollLeft - (containerRect.width - cardRect.width) / 2;
+      slider.scrollTo({ left: scrollOffset, behavior: 'smooth' });
+    }
+
+    // Detect which card is in view on scroll
+    function onScroll() {
+      var cards = getCards();
+      var containerRect = slider.getBoundingClientRect();
+      var containerCenter = containerRect.left + containerRect.width / 2;
+      var closestIndex = 0;
+      var closestDist = Infinity;
+
+      cards.forEach(function (card, i) {
+        var cardRect = card.getBoundingClientRect();
+        var cardCenter = cardRect.left + cardRect.width / 2;
+        var dist = Math.abs(cardCenter - containerCenter);
+        if (dist < closestDist) {
+          closestDist = dist;
+          closestIndex = i;
+        }
+      });
+
+      updateDots(closestIndex);
+    }
+
+    slider.addEventListener('scroll', debounce(onScroll, 80), { passive: true });
+
+    // Dot click: scroll to that founder
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        var index = parseInt(dot.getAttribute('data-index'), 10);
+        scrollToCard(index);
+        updateDots(index);
+        resetAutoScroll();
+      });
+    });
+
+    // Auto-scroll on mobile every 4 seconds
+    function startAutoScroll() {
+      if (window.innerWidth >= 768) return; // only on mobile
+      autoScrollTimer = setInterval(function () {
+        var cards = getCards();
+        currentIndex = (currentIndex + 1) % cards.length;
+        scrollToCard(currentIndex);
+        updateDots(currentIndex);
+      }, 4000);
+    }
+
+    function stopAutoScroll() {
+      if (autoScrollTimer) {
+        clearInterval(autoScrollTimer);
+        autoScrollTimer = null;
+      }
+    }
+
+    function resetAutoScroll() {
+      stopAutoScroll();
+      startAutoScroll();
+    }
+
+    // Stop auto-scroll on user touch/interaction, restart after 6s
+    slider.addEventListener('touchstart', function () {
+      stopAutoScroll();
+    }, { passive: true });
+
+    slider.addEventListener('touchend', function () {
+      setTimeout(function () {
+        startAutoScroll();
+      }, 6000);
+    }, { passive: true });
+
+    // Start auto-scroll
+    startAutoScroll();
+
+    // Stop auto-scroll on larger screens
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 768) {
+        stopAutoScroll();
+      } else if (!autoScrollTimer) {
+        startAutoScroll();
+      }
+    });
+  }
+
+  // Simple debounce utility
+  function debounce(fn, delay) {
+    var timer;
+    return function () {
+      var args = arguments;
+      var context = this;
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        fn.apply(context, args);
+      }, delay);
+    };
+  }
+
   // Init on DOM Ready
   document.addEventListener('DOMContentLoaded', function () {
     initMobileMenu();
     renderReviews();
     initServicesToggle();
+    initFoundersSlider();
   });
 })();
 

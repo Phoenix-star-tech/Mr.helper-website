@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://mrhelper.in/sitemap.xml
+Sitemap: https://mrhelper.vashik.in/sitemap.xml

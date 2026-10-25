@@ -12,7 +12,7 @@ template = """<!DOCTYPE html>
   <meta name="keywords" content="{meta_keywords}">
   <meta name="author" content="Vashik Technologies">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://mrhelper.in/services/{slug}.html">
+  <link rel="canonical" href="https://mrhelper.vashik.in/services/{slug}.html">
 
   <meta name="geo.region" content="IN-TG">
   <meta name="geo.placename" content="{city_name}">
@@ -35,9 +35,9 @@ template = """<!DOCTYPE html>
     "@context": "https://schema.org",
     "@type": "{schema_type}",
     "name": "Mr. Helper - {service_name} in {city_name}",
-    "image": "https://mrhelper.in/assets/images/mr-helper-logo-clean.png",
-    "@id": "https://mrhelper.in/services/{slug}.html",
-    "url": "https://mrhelper.in/services/{slug}.html",
+    "image": "https://mrhelper.vashik.in/assets/images/mr-helper-logo-clean.png",
+    "@id": "https://mrhelper.vashik.in/services/{slug}.html",
+    "url": "https://mrhelper.vashik.in/services/{slug}.html",
     "telephone": "+91-9123456789",
     "priceRange": "{price_range}",
     "address": {{
